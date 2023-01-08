@@ -5,7 +5,7 @@
              Title="LoginPage">
     <ContentPage.Content>
         <Grid BackgroundColor="#53504d">
-            <!--   <Image Source="bg.jpeg" VerticalOptions="Fill" Aspect="Fill"/> -->
+
             <Grid HorizontalOptions="Center" VerticalOptions="Center" Padding="10">
 
                 <Grid.RowDefinitions>
@@ -16,7 +16,13 @@
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
                 </Grid.RowDefinitions>
-
+                <!--
+                <StackLayout>
+                    <Frame BackgroundColor="Black" HeightRequest="60" WidthRequest="60" CornerRadius="30" Padding="0" Margin="0,100,0,0" HorizontalOptions="Center">
+                        <Image Source="login.jpg" Aspect="AspectFill" Margin="0"></Image>
+                    </Frame>
+                </StackLayout>
+             -->
                 <Label Grid.Row="0" Grid.Column="0" Text="User Name" FontSize="17" FontAttributes="Bold" TextColor="White"/>
                 <Frame Grid.Row="1" Grid.Column="0" HeightRequest="50">
                     <Entry  Text="{Binding UserName}" BackgroundColor="#4c4c4c" HeightRequest="48"  WidthRequest="200"/>
@@ -31,7 +37,6 @@
                         <Button Text="Register" Command="{Binding RegisterCommand}" TextColor="White" BackgroundColor="#2C363C" HeightRequest="40" WidthRequest="100" />
                     </VerticalStackLayout>
                 </Grid>
-
             </Grid>
         </Grid>
     </ContentPage.Content>
